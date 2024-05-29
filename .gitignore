@@ -42,3 +42,4 @@ nbproject
 .node_history
 .npmrc
 lib
+git-filter.sh
