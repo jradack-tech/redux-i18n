@@ -1,53 +1,6 @@
 # redux-react-i18n
 
-[![Build Status](https://travis-ci.org/derzunov/redux-react-i18n.svg?branch=master)](https://travis-ci.org/derzunov/redux-react-i18n)
-[![npm](https://img.shields.io/npm/dt/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
-[![npm](https://img.shields.io/npm/v/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
-[![Package Quality](http://npm.packagequality.com/shield/redux-react-i18n.svg)](http://packagequality.com/#?package=redux-react-i18n)
-
-[![Package Quality](http://npm.packagequality.com/badge/redux-react-i18n.png)](http://packagequality.com/#?package=redux-react-i18n)
-
-An i18n solution with plural forms support for Redux/React
-
-## Workers of all countries, unite!
-
-![Workers of all countries, unite!](https://raw.githubusercontent.com/derzunov/redux-react-i18n/master/i18n-logo.jpg "Workers of all countries, unite!")
-
-### Supported languages list with expected codes for pluralize mechanics switching
-- Russian ( ru, ru-RU )
-- English ( en, en-US, en-UK )
-- French ( fr )
-- German ( de )
-- Polish ( pl )
-- Czech ( cs )
-- Portuguese ( pt )
-- Brazilian Portuguese ( pt-BR, br )
-- Arabic ( ar-AR, ar )
-- Turkish ( tr )
-- Occitan ( oc )
-- Belarusian ( be )
-- Bosnian ( bs )
-- Croatian ( hr )
-- Serbian ( sr )
-- Ukrainian ( uk )
-- ...
-
 ## Example Demo
-
-[derzunov.github.io/redux-react-i18n](https://derzunov.github.io/redux-react-i18n/)
-
-### What's in demo?
-- webpack/gulp dev/prod build system
-- languages:
-   * English
-   * Russian
-   * Polish
-   * French
-   * Belarusian
-   * ...
-- language switcher component
-- simple key demo
-- key with pluralization demo
 
 ```
 git clone https://github.com/derzunov/redux-react-i18n redux-react-i18n
@@ -79,11 +32,6 @@ gulp prod
 <span>Пришли 2 кошечки</span>
 <span>Пришло 5 кошечек</span>
 ```
-
-### What am I using:
-pluralizer: ( [github](https://github.com/derzunov/pluralizer) or [npm](https://www.npmjs.com/package/pluralizr) ) for plural forms changing
-
-translator: ( [github](https://github.com/derzunov/translator) or [npm](https://www.npmjs.com/package/translatr) ) for translation ([translator demo](https://derzunov.github.io/translator/))
 
 ## Install:
 Terminal:
@@ -221,10 +169,6 @@ Loc = connect( mapStateToProps )( LocPresentational )
 See more in src/\*.js
 
 
-## Using with React Native
-
-[redux-react-native-i18n](https://github.com/derzunov/redux-react-native-i18n)
-
 ## The "Span Problem"
 
 If the span tag is a big problem (in "option" tag for example), you can use **translate** from 'translatr' like this
@@ -260,14 +204,3 @@ With ```<Loc locKey="your_key" ></Loc>``` you'll get:
   <option> <span>Translated Text</span> </option>
 </select>
 ```
-
-
-With ```translate``` you'll get:
-```
-<select>
-  <option> Translated Text </option>
-</select>
-```
-... but you'll have to write extra code
-
-PS You already have [translatr](https://github.com/derzunov/translator) as a dependency of redux-react-i18n in your node_modules
